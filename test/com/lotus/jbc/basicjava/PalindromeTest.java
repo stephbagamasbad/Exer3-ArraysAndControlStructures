@@ -1,4 +1,4 @@
-package com.orangeandbronze.jbc.basicjava6;
+package com.lotus.jbc.basicjava;
 
 import junit.framework.TestCase;
 
