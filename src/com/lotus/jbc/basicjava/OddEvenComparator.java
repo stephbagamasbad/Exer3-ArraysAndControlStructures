@@ -16,8 +16,27 @@ public class OddEvenComparator {
 	 * 											 the number of odd integers.
 	 */
 	public String determineMajority(int[] ints){
-	
-		// Modify content of this method
-		return null;
+
+		int evenCount = 0;
+		int oddCount = 0;
+		String majority = "";
+
+		for (int i=0; i < ints.length; i++) {
+			if (ints[i]%2 == 0) {
+				evenCount++;
+			} else {
+				oddCount++;
+			}
+		}
+
+		if (evenCount == oddCount) {
+			majority = "There are equal odd and even integers in the array.";
+		} else if (evenCount < oddCount) {
+			majority = "There are more odd integers.";
+		} else {
+			majority = "There are more even integers.";
+		}
+
+		return majority;
 	}
 }
