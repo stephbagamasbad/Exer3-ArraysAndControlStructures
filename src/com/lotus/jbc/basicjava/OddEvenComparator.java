@@ -18,32 +18,6 @@ public class OddEvenComparator {
 	public String determineMajority(int[] ints){
 	
 		// Modify content of this method
-		int odds = 0;
-		int evens = 0;
-		String theMajority = "";
-
-		// Acquire number of odd and even integers from the ints Array
-		for (int ctr = 0; ctr < ints.length; ctr++) {
-			if (ints[ctr]%2 == 0) {
-				evens++;
-			}
-			else {
-				odds++;
-			}
-		}
-
-		// Compare the count of odds and evens, then assign correct string
-		if (odds > evens) {
-			theMajority = "There are more odd integers.";
-		}
-		else if (evens > odds) {
-			theMajority = "There are more even integers.";
-		}
-		else {
-			theMajority = "There are equal odd and even integers in the array.";
-		}
-
-		// Return the value of the string
-		return theMajority;
+		return null;
 	}
 }
