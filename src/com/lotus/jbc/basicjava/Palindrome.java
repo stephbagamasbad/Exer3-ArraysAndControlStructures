@@ -12,8 +12,28 @@ public class Palindrome {
 	 * 		false - if the array is not a palindrome.
 	 */
 	public boolean determinePalindrome(char[] chars) {
-		
-		// Modify content of this method
-		return false;
+		char[] reverse = new char[chars.length];
+		int temp = 0;
+		for ( int i = chars.length-1; i >= 0; i-- ) {
+			reverse[temp] = chars[i];
+			//System.out.println(reverse[temp]);
+			temp++;
+		}
+
+		boolean temp1 = false;
+		for (int i = 0; i <= chars.length-1 ; i++) {
+			//System.out.println(chars[i]);
+			if(reverse[i] != chars[i]) {
+				temp1 = false;
+				break;
+			}else {
+				temp1 = true;
+			}
+
+			//System.out.println(temp1);
+		}
+
+
+		return temp1;
 	}
 }
