@@ -13,7 +13,19 @@ public class Palindrome {
 	 */
 	public boolean determinePalindrome(char[] chars) {
 		
-		// Modify content of this method
-		return false;
+		int length = chars.length;
+		for (int index = 0; index < array.length; index++){
+			int start = chars[index];
+			int end = chars[--length];
+			if (length < index){
+				return true;
+			}
+			if (start != end){
+				return false;
+			}
+		}
+		
+		return true;
+		
 	}
 }
